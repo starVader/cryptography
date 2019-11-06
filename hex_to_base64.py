@@ -3,8 +3,8 @@ import codecs
 
 def convert_hex_to_base64(hex_data):
     bytes_data = codecs.decode(hex_data, 'hex')
-    print(type(bytes_data))
-    print(codecs.encode(bytes_data, 'base64').decode())
+    decode = codecs.encode(bytes_data, 'base64').decode()
+    return decode
 
 
 if __name__ == '__main__':
